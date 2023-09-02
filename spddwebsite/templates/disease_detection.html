@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Plant Leaf</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="static/vendor/fontawesome-free/static/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/static/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="static/css/project.min.css" rel="stylesheet">
+    <style>
+        .ul-nav {
+            background-image: url("../static/img/fresh.png") !important;
+        }
+
+        .custom-card {
+
+            padding: 17px;
+        }
+
+        .custom-card h3 {
+            margin: 10px 0;
+            font-size: 20;
+        }
+    </style>
+    <style>
+        /* Skeleton animation keyframes */
+        @keyframes skeleton {
+            0% {
+                background-position: 200% 0;
+            }
+
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+        /* Skeleton styles */
+        .skeleton {
+            background: linear-gradient(90deg, #ccc 25%, #e0e0e0 50%, #ccc 75%);
+            background-size: 200% 100%;
+            animation: skeleton 1.5s infinite;
+            border-radius: 20px;
+        }
+    </style>
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="ul-nav navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" style="background-color: #4ccc3a;
+        background-image: linear-gradient(180deg,#8ac271 10%,#1cc88a 100%);
+        background-size: cover; !important" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <style>
+                        svg {
+                            fill: #ffffff,
+                        }
+                    </style>
+                    <path
+                        d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0h32c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64H64c123.7 0 224 100.3 224 224v32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320C100.3 320 0 219.7 0 96z" />
+                </svg>
+                <div class="sidebar-brand-text mx-3">Plantico</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Nav Item - Home -->
+            <li class="nav-item">
+                <a id="homeLink" class="nav-link" href="index">
+                    <span class="nav-text">Home</span></a>
+            </li>
+            <!-- Nav Item - Disease Detection -->
+            <li class="nav-item">
+                <a id="diseaseLink" class="nav-link" href="disease_detection">
+                    <span class="nav-text">Disease Detection</span></a>
+            </li>
+            <!-- Nav Item - Team Member -->
+            <li class="nav-item">
+                <a id="teamLink" class="nav-link" href="team_member">
+                    <span class="nav-text">Team Member</span></a>
+            </li>
+            <!-- Nav Item - Resources -->
+            <li class="nav-item">
+                <a id="resourcesLink" class="nav-link" href="resourses">
+                    <span class="nav-text">Resources</span></a>
+            </li>
+            <!-- Nav Item - Contact Us -->
+            <li class="nav-item">
+                <a id="contactLink" class="nav-link" href="contact_us.html">
+                    <span class="nav-text">Contact Us</span></a>
+            </li>
+
+            <!-- Sidebar Toggler (Sidebar) 
+            <div class="text-center d-none d-md-inline button-space" style="display:none">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>-->
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+                    style="display: flex; justify-content: center; align-items: center;">
+                    <h1 class="h3 mb-0 text-gray-800">Plant Leaf Disease Detection</h1>
+                </nav>
+
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <!-- <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Disease Detection</h1>
+                    </div> -->
+                    <!-- Upload Photo and Description Sections -->
+                    <div class="row">
+                        <!-- Upload Photo Section -->
+                        <div class="col-lg-3 mb-4"></div>
+                        <div class="col-lg-12 mb-4">
+                            <div class="card border-left-success shadow h-80 py-2"
+                                style="border-right:.25rem solid #4c8e10 !important;border-left:.25rem solid #4c8e10 !important">
+                                <div class="card-header py-3">
+                                    <h5 class="m-0 font-weight-bold text-primary" style=" color: #4c8e10 !important;">
+                                        Upload Image</h5>
+                                </div>
+                                <div class="card-body">
+                                    <!-- <form method="POST" enctype="multipart/form-data"> -->
+                                    <!-- Your photo upload form or button -->
+                                    <input type="file" name="image" id="photoInput" accept="image/*" class="mb-4" />
+                                    <input type=submit id="uploadButton"
+                                        style="color: white; background-color: #4c8e10 ;border-color: #4c8e10; margin-left: 50%;"
+                                        class="btn btn-primary" />
+                                    <!-- </form> -->
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-4"></div>
+                        </div>
+                    </div>
+
+                    <!-- Display Uploaded Photo Section -->
+
+                    <!-- Description Section -->
+                    
+                    <div id="gptresponse1" class="col-lg-12" style="display:none; padding-bottom:10px">
+                        <div class="card border-left-success shadow h-80 py-2"
+                            style="border-right:.25rem solid #4c8e10 !important; border-left:.25rem solid #4c8e10 !important">
+
+                            <div class="row" style="font-family: 'Poppins', sans-serif; ">
+
+
+                                <div class="col-sm-12 mb-4 result-plant " style="display:none;">
+
+                                    <h2 class="m-0 font-weight-bold text-primary" style=" color: #4c8e10 !important; padding-left: 15px; ">Results of the Plant:</h2>
+
+                                </div>
+
+
+
+                                <div class="col-md-6 mb-4 ">
+
+                                    <!-- <div class="card border-left-warning border-right-warning shadow h-100 py-2" style=" border-bottom:.25rem solid #f6c23e!important;">
+                                            <div class="card-header py-3">
+                                                
+                                                
+                                            </div> -->
+                                    <!-- Skeleton the div  -->
+                                    <div class="card-body skeleton-load " style="display: none;">
+                                        <div style="display: flex; flex-direction: column; padding: 5px 0px;">
+                                            <h3 style="color: #4c8e10 !important">
+
+                                                <!-- Skeleton loading effect for the text -->
+                                                <div class="skeleton" style="width: 100px; height: 1em;"></div>
+                                            </h3>
+                                            <div>
+                                                <!-- Skeleton loading effect for the subheading -->
+                                                <h4 class="skeleton"
+                                                    style="padding-top: 20px; color: #ccc; padding-left: 28px; height:.3rem;">
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; flex-direction: column; padding: 5px 0px;">
+                                            <h3 style="color: #4c8e10 !important">
+
+                                                <!-- Skeleton loading effect for the text -->
+                                                <div class="skeleton" style="width: 100px; height: 1em;"></div>
+                                            </h3>
+                                            <div>
+                                                <!-- Skeleton loading effect for the subheading -->
+                                                <h4 class="skeleton"
+                                                    style="padding-top:20px; color: #ccc; padding-left: 28px;height:.3rem;">
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; flex-direction: column; padding: 5px 0px;">
+                                            <h3 style="color: #4c8e10 !important">
+
+                                                <!-- Skeleton loading effect for the text -->
+                                                <div class="skeleton" style="width: 100px; height: 1em;"></div>
+                                            </h3>
+                                            <div>
+                                                <!-- Skeleton loading effect for the subheading -->
+                                                <h4 class="skeleton"
+                                                    style="padding-top: 20px; color: #ccc; padding-left: 28px;height:.3rem;">
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; flex-direction: column; padding: 5px 0px;">
+                                            <h3 style="color: #4c8e10 !important">
+
+                                                <!-- Skeleton loading effect for the text -->
+                                                <div class="skeleton" style="width: 100px; height: 1em;"></div>
+                                            </h3>
+                                            <div>
+                                                <!-- Skeleton loading effect for the subheading -->
+                                                <h4 class="skeleton"
+                                                    style="padding-top: 20px; color: #ccc; padding-left: 28px;height:.3rem;">
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--End Skeleton section-->
+
+                                    <div class="card-body custom-card error-result" style="display:none;">
+
+                                        <h3 style="color:red"> The image is not an Plant ! </h3>
+
+
+                                    </div>
+
+
+                                    <div class="card-body custom-card description-section" style="display: none;">
+                                        <!-- Display description text from the backend -->
+                                        <div style="display:flex;flex-direction: column;padding: 5px 0px; ">
+
+                                            <h3 style="color:#4c8e10 !important">
+                                                <span class="svg-nav">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                        <style></style>
+                                                        <path
+                                                            d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0h32c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64H64c123.7 0 224 100.3 224 224v32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320C100.3 320 0 219.7 0 96z" />
+                                                    </svg>
+
+                                                </span>
+                                                Plant Name:
+                                            </h3>
+
+
+                                            <div>
+                                                <h4 style="padding-top: 9px;color: rgb(113 123 117);padding-left: 28px;"
+                                                    id="plant"></h4>
+                                            </div>
+
+                                        </div>
+                                        <div style="display:flex;flex-direction: column;padding: 5px 0px;">
+
+                                            <h3 style="color:#4c8e10 !important">
+                                                <span class="svg-nav">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                        <style></style>
+                                                        <path
+                                                            d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0h32c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64H64c123.7 0 224 100.3 224 224v32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320C100.3 320 0 219.7 0 96z" />
+                                                    </svg>
+
+                                                </span>
+                                                Is Healthy:
+                                            </h3>
+                                            <div>
+                                                <h4 style="padding-top: 9px;color: rgb(113 123 117);padding-left: 28px;"
+                                                    id="healthy"></h4>
+                                            </div>
+
+                                        </div>
+
+                                        <div id="disease-true"
+                                            style="display:flex;flex-direction: column;padding: 5px 0px; display:none;">
+
+                                            <h3 style="color:#4c8e10 !important">
+                                                <span class="svg-nav">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                        <style></style>
+                                                        <path
+                                                            d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0h32c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64H64c123.7 0 224 100.3 224 224v32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320C100.3 320 0 219.7 0 96z" />
+                                                    </svg>
+
+                                                </span>
+                                                Disease Name:
+                                            </h3>
+                                            <div>
+                                                <h4 style="padding-top: 9px;color: rgb(113 123 117);padding-left: 28px;" id="name_disease"></h4>
+                                            </div>
+
+                                        </div>
+
+                                        <div style="display:flex;flex-direction: column;padding: 5px 0px;">
+
+                                            <h3 style="color:#4c8e10 !important">
+                                                <span class="svg-nav">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                        <style></style>
+                                                        <path
+                                                            d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0h32c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64H64c123.7 0 224 100.3 224 224v32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320C100.3 320 0 219.7 0 96z" />
+                                                    </svg>
+
+                                                </span>
+                                                Probability of the prediction:
+                                            </h3>
+                                            <div>
+                                                <h4 style="padding-top: 9px;color: rgb(113 123 117);padding-left: 28px;"
+                                                    id="plant_probability"></h4>
+                                            </div>
+
+                                            <!-- <div>
+                                                        <h4 style="padding-top: 9px;color: rgb(113 123 117);padding-left: 28px;" id="plant_info"></h4>
+                                                    </div> -->
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-md-6 mb-4 uploaded-image-section" style="display: none;">
+
+                                    <!-- <div class="card border-left-info border-right-info shadow h-100 py-2" style=" border-bottom:.25rem solid #36b9cc!important;">
+                                        <div class="card-header py-3">
+                                           
+                                        </div>
+                                      
+                                    </div> -->
+                                    <div class="card-body">
+                                        <!-- Display uploaded photo here -->
+                                        <img id="uploadedPhoto" src="#" alt="Uploaded Photo"
+                                            class="img-fluid img-responseve" style="max-width: 100%; height: auto;margin: 0% auto;
+                                            
+                                            float: right;
+                                            margin-right: 12%;
+                                            max-width: 407px;
+                                            min-height: 200px;
+                                            ">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Upload Photo and Description Sections -->
+                        <div id="gptresponse" class="col-lg-12" style="display:none; padding-top:50px; padding-bottom: 50px">
+                            <div class="card border-left-success shadow h-80 py-2"
+                                style="border-right:.25rem solid #4c8e10 !important; border-left:.25rem solid #4c8e10 !important">
+                                <div class="card-header py-3">
+                                    <h5 class="m-0 font-weight-bold text-primary" style=" color: #4c8e10 !important ">
+                                        Ask ChatGpt For Information </h5>
+                                </div>
+                                <div>
+                                    <h4 style="padding-top: 9px;color: black; padding-left: 28px;text-shadow: black;"
+                                        id="plant_info"></h4>
+                                </div>
+                                <div id="flaskQuestion" style="display: none;color: black; margin:8px;text-align: right;
+                                background-color: #a0e8e0;  margin-bottom: 10px; padding: 10px;border-radius: 5px;
+            background-color: #e0e0e0; width: auto; align-self: center;"></div>
+                                <div id="flaskResponse" style="display: none; margin:8px;color: #4c8e10 ;  margin-bottom: 10px;
+                                padding: 10px;
+                                border-radius: 5px;
+                                width: auto;
+                                align-self: center;
+                                background-color: #e0e0e0;"></div>
+                                <div id="flaskInteraction" style="display: inline-flex; margin: 20px;">
+                                    <div style="margin-right:10px;width: 90%;"> <input
+                                            style="border: 1px #7ac375 solid; height: 36px; border-radius: 3px;width: 90%; "
+                                            type="text" id="userInput" placeholder="Enter your Question ..."></div>
+                                    <div style="margin-left:10px;"> <input type=submit id="submitQuery"
+                                            style="color: white; background-color: #4c8e10; border-color: #4c8e10;"
+                                            class="btn btn-primary" /></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- JavaScript code for image upload and display -->
+                    <script>
+                        // Get references to the input and image elements
+                        const photoInput = document.getElementById('photoInput');
+                        const uploadedPhoto = document.getElementById('uploadedPhoto');
+                        const gptresponse = document.getElementById('gptresponse');
+                        const gptresponse1 = document.getElementById('gptresponse1');
+                        const uploadButton = document.getElementById('uploadButton');
+                        const uploadedImageSection = document.querySelector('.uploaded-image-section');
+                        const descriptionSection = document.querySelector('.description-section');
+                        const resultstatment = document.querySelector('.result-plant');
+                        const skeleton = document.querySelector('.skeleton-load');
+                        const notplant = document.querySelector('.error-result');
+
+                        // Add an event listener to the "Upload and Preview Image" button
+                        uploadButton.addEventListener('click', function () {
+                            console.log('Upload button clicked');
+                            const file = photoInput.files[0];
+
+                            if (file) {
+                                // Read the selected file as a data URL
+                                const reader = new FileReader();
+                                reader.onload = function (event) {
+                                    skeleton.style.display = 'block';
+                                    resultstatment.style.display = 'block';
+                                    descriptionSection.style.display = 'none';
+                                    uploadedPhoto.src = event.target.result;
+                                    gptresponse.style.display = "block"
+                                    gptresponse1.style.display = "block"
+
+                                    // Show the uploaded image section and description section
+                                    uploadedImageSection.style.display = 'block';
+                                    notplant.style.display = 'none';
+                                };
+                                reader.readAsDataURL(file);
+                            }
+                        });
+                        // Get all navigation links
+                        const navLinks = document.querySelectorAll('.nav-link');
+                        // Add click event listeners to each link
+                        navLinks.forEach(link => {
+                            link.addEventListener('click', function () {
+                                // Remove "active" class from all links
+                                navLinks.forEach(link => link.classList.remove('active-link'));
+                                // Add "active" class to the clicked link
+                                link.classList.add('active-link');
+                            });
+                        });
+
+                    </script>
+
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- End of Main Content -->
+        </div>
+        <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- Bootstrap core JavaScript-->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="static/js/sb-admin-2.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="static/vendor/chart.js/Chart.min.js"></script>
+    <!-- Page level custom scripts -->
+    <script src="static/js/demo/chart-area-demo.js"></script>
+    <script src="static/js/demo/chart-pie-demo.js"></script>
+    <script src="https://kit.fontawesome.com/7ebeca01df.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#uploadButton').click(function () {
+                var formData = new FormData();
+                formData.append('image', $('#photoInput')[0].files[0]);
+                const descriptionSection = document.querySelector('.description-section');
+                const skeleton = document.querySelector('.skeleton-load');
+
+                $.ajax({
+                    url: '/datarespons',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        console.log(response);
+                        let probability = response.plant_probability;
+                        skeleton.style.display = 'none';
+                        if (probability < 85) {
+                            $('.error-result').css('display', 'block');
+                            $('.description-section').css('display', 'none');
+
+                        } else {
+                            $('.description-section').css('display', 'block');
+                            $('.error-result').css('display', 'none');
+                        }
+                        $('#plant').text("" + response.plant);
+                        $('#healthy').text("" + response.healthy);
+                        if (response.healthy == "Sick") {
+                            $('#disease-true').css('display', 'block');
+                            $('#name_disease').text("" + response.disease);
+                        }
+                        $('#plant_probability').text("" + response.plant_probability + '%');
+                        $('#plant_info').text("" + response.plant_info);
+
+
+                    },
+                    error: function (error) {
+                        $('#message').text('Error uploading photo.');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#submitQuery').click(function () {
+                const userInput = $('#userInput').val();
+                const messageInput = document.getElementById("userInput");
+                if (userInput) {
+                    $.ajax({
+                        url: '/user_query',
+                        type: 'POST',
+                        data: JSON.stringify({ "prompt": userInput }),
+                        contentType: 'application/json',
+                        success: function (response) {
+                            $('#flaskQuestion').text(userInput);
+                            
+                            // Calculate the length (e.g., number of characters in the content)
+                            var length = $('#flaskQuestion').text().length;
+
+                            // Set the marginLeft property based on the length
+                            $('#flaskQuestion').css('margin-left', length + 'px');
+                            $('#flaskQuestion').css('display', 'block');
+                            // const messageInput = document.getElementById("userInput");
+                            // const textLength = messageText.length;
+                            // $('#flaskQuestion').css('marginLeft', `${textLength * 2}px`);
+
+                            $('#flaskResponse').text(response.response);
+                            $('#flaskResponse').css('display', 'block');
+                            messageInput.value = "";
+                            
+
+                        },
+                        error: function (error) {
+                            $('#flaskResponse').text('Error processing the request.');
+                            $('#flaskResponse').css('display', 'block');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

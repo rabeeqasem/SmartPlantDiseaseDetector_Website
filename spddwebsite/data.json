@@ -1,0 +1,92 @@
+{
+    "0": {
+        "name": "Tomato__Target_Spot",
+        "plant": "Tomato",
+        "healthy": false,
+        "disease": "Target Spot"
+    },
+    "1": {
+        "name": "Tomato_Late_blight",
+        "plant": "Tomato",
+        "healthy": false,
+        "disease": "Late Blight"
+    },
+    "2": {
+        "name": "Pepper__bell___healthy",
+        "plant": "Pepper",
+        "healthy": true,
+        "disease": null
+    },
+    "3": {
+        "name": "Potato___Late_blight",
+        "plant": "Potato",
+        "healthy": false,
+        "disease": "Late Blight"
+    },
+    "4": {
+        "name": "Tomato__Tomato_YellowLeaf__Curl_Virus",
+        "plant": "Tomato",
+        "healthy": false,
+        "disease": "Tomato Yellow Leaf Curl Virus"
+    },
+    "5": {
+        "name": "Tomato_Spider_mites_Two_spotted_spider_mite",
+        "plant": "Tomato",
+        "healthy": false,
+        "disease": "Spider Mites (Two-Spotted Spider Mite)"
+    },
+    "6": {
+        "name": "Pepper__bell___Bacterial_spot",
+        "plant": "Pepper",
+        "healthy": false,
+        "disease": "Bacterial Spot"
+    },
+    "7": {
+        "name": "Tomato_Septoria_leaf_spot",
+        "plant": "Tomato",
+        "healthy": false,
+        "disease": "Septoria Leaf Spot"
+    },
+    "8": {
+        "name": "Tomato_Leaf_Mold",
+        "plant": "Tomato",
+        "healthy": false,
+        "disease": "Leaf Mold"
+    },
+    "9": {
+        "name": "Potato___healthy",
+        "plant": "Potato",
+        "healthy": true,
+        "disease": null
+    },
+    "10": {
+        "name": "Tomato__Tomato_mosaic_virus",
+        "plant": "Tomato",
+        "healthy": false,
+        "disease": "Tomato Mosaic Virus"
+    },
+    "11": {
+        "name": "Tomato_Bacterial_spot",
+        "plant": "Tomato",
+        "healthy": false,
+        "disease": "Bacterial Spot"
+    },
+    "12": {
+        "name": "Tomato_Early_blight",
+        "plant": "Tomato",
+        "healthy": false,
+        "disease": "Early Blight"
+    },
+    "13": {
+        "name": "Tomato_healthy",
+        "plant": "Tomato",
+        "healthy": true,
+        "disease": null
+    },
+    "14": {
+        "name": "Potato___Early_blight",
+        "plant": "Potato",
+        "healthy": false,
+        "disease": "Early Blight"
+    }
+}

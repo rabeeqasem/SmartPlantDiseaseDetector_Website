@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.pt-5 {
+    padding-top: 3rem !important;
+}
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+.border-0 {
+    border: 0 !important;
+}
+.position-relative {
+    position: relative !important;
+}
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+}
+.card {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: .25rem;
+}
+
+.member-profile {
+    top: -50px;
+    left: 0;
+}
+.text-center {
+    text-align: center !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+.position-absolute {
+    position: absolute !important;
+}
+
+.member-profile img {
+    width: 135px;
+    height: 135px;
+    margin-top: -14px;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+}
+.member-name {
+    margin-top: 6px;
+}
+
+/* Apply the animation to the upload button */
+#uploadButton {
+    animation: buttonScale 1s infinite;
+}
+/* Active link style */
+.active-link {
+    background-color: #c5da60; /* Change to your desired active background color */
+    color: white !important; /* Important to override default link color */
+}
+
+/* Hover effect */
+.nav-link:hover {
+    background-color: #498351; /* Change to your desired active background color */
+    color: white !important; /* Important to override default link color */
+    font-weight: bolder; /* Important to override default link color */
+}
+
+    /* Add this to your existing CSS styles */
+    @keyframes buttonScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ul-nav{
+    background-image: url("../img/fresh.png") !important;}
+
+    
+
+
+.nav-item,
+.nav-item a  {
+        transition: transform 0.3s ease-in-out;
+ }
+    
+.nav-item:hover .nav-item a{
+    transform: scale(1.1);
+    font-weight: bold;
+  }
+
+
+  .ul-nav {
+    width: 200px;
+    background-color: #f1f1f1;
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Height of the viewport */
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.button-space{
+    position: absolute;
+    bottom: 4px;
+    right: 7px;
+}
+
+.sidebar-dark .nav-item .nav-link {
+    color: white;
+    font-weight: bolder;
+}
+
+.desc{
+   color: black;
+}
+
+.nav-item {
+    transition: opacity .25s ease-in-out;
+  }
+  
+  .navbar-nav:hover .nav-item  {
+    opacity: 0.5;
+  }
+  
+  .navbar-nav:hover .nav-item:hover {
+    opacity: 1;
+  }
+
+
+  .nav-text{
+    font-size: 1.1rem !important;
+    font-weight: bold;
+  }
+
+.svg-nav svg{
+    fill: #fff;
+    height: 24px;
+    width: 20px;
+    background-color: #11da11;
+    padding: 2px;
+  }
